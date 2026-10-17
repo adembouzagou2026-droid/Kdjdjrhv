@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>نيون رَش · سباق الأساطير</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<canvas id="g"></canvas><div id="fx"></div>
+<div class="hud" id="top">
+ <div id="mid"><div class="b"><small>المركز</small><strong id="pos">1/5</strong></div><div class="b"><small>اللفة</small><strong id="lap">1/3</strong></div></div>
+ <canvas id="mm" width="208" height="208"></canvas>
+</div>
+<div id="net"></div><div id="cd"></div>
+<div class="hud" id="bot"><div class="b" style="display:inline-block;padding:8px 22px"><div id="spd">0<small> كم/س</small></div><div id="tm" style="font-size:13px;color:#9ad;margin-top:2px">00:00.0</div><div id="nb"><div id="nf"></div></div></div></div>
+<div class="tc" id="tl"><button class="bt" data-k="l">◀</button><button class="bt" data-k="r">▶</button></div>
+<div class="tc" id="tr"><button class="bt n" data-k="n">⚡</button><button class="bt s" data-k="h">درفت</button><button class="bt s" data-k="b">فرامل</button></div>
+<div class="ov" id="menu"><div class="card">
+ <h1>نيون رَش</h1>
+ <p>سباق ٣ لفات في مدينة النيون ضد ٤ منافسين، ولو فتح غيرك نفس الرابط هتشوفه في الحلبة أونلاين!<br>اترك الدرفت يشحن النيترو، والحيطان بتبطّئك.</p>
+ <input id="nm" maxlength="12" placeholder="اسمك">
+ <div id="sw"></div>
+ <button class="go" id="go">ابدأ السباق 🏁</button>
+ <div style="background:rgba(0,240,255,.07);border:1px solid rgba(0,240,255,.3);border-radius:14px;padding:12px;margin-bottom:14px;text-align:right"><div style="text-align:center;font-size:14px;margin-bottom:8px">🏠 كود غرفتك: <b id="rc" style="color:#ffd400;font-size:20px;letter-spacing:3px">…</b></div><div class="row" style="margin:0"><input id="jc" placeholder="أو اكتب كود غرفة صاحبك" style="margin:0;flex:1"><button class="sm" id="jb">انضم</button></div></div><p class="hint" id="ns" style="color:#7fffb0;font-size:14px">⏳ جاري الاتصال بالأونلاين…</p><p class="hint">كيبورد: الأسهم أو WASD · مسافة = درفت · Shift = نيترو<br>موبايل: أزرار الشاشة (الغاز تلقائي)</p>
+</div></div>
+<div class="ov" id="end"><div class="card">
+ <h1 id="er">المركز 1</h1><p id="et"></p>
+ <button class="go" id="again">سباق جديد 🔁</button>
+</div></div>
+<div class="ov" id="inv" style="display:none;z-index:9;background:rgba(5,3,20,.88)"><div class="card"><h1 style="font-size:28px">📨 دعوة سباق</h1><p id="it"></p><button class="go" id="ia">قبول ✅</button><button class="go" id="ix" style="margin-top:10px;background:#3a3558;box-shadow:none">رفض</button></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/1.5.4/peerjs.min.js"></script>
+<script src="script.js"></script></body></html>
